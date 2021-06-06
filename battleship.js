@@ -1,4 +1,4 @@
-var randomLoc = Math.floor(Math.random * 5);
+var randomLoc = Math.floor(Math.random() * 5);
 var location1 = randomLoc;
 var location2 = location1 + 1;
 var location3 = location2 + 1;
@@ -22,9 +22,10 @@ while (isSunk == false) {
             if (hits == 3) {
                 isSunk =true;
                 alert("Você afundou os meus navios de guerra!");
-            } else{
-                alert("MISS!");
+            
             }
+        } else{
+            alert("MISS!");
         }
     }
 } 
